@@ -1,5 +1,5 @@
 <div class="card" id="{{ $uniqueID }}">
-    <h6 class="card-header"></h6>
+    {{-- <h6 class="card-header"></h6> --}}
     
     {{-- Table Header --}}
     <div class="row">
