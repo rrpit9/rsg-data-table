@@ -18,10 +18,10 @@
         </div>
         
         <div class="col-sm-12 col-md-4 justify-content-md-end">
-            <a class="{{ config('data-table.refresh_btn') }} dt--reload-data" href="javascript:void(0);" title="@lang('data-table::messages.reload_data')"><i class="bx bx-refresh"></i></a>
             @if( count($downloadOptions) > 0 && (config('data-table.download_csv') || config('data-table.download_excel') || config('data-table.download_pdf')))
                 <a class="{{ config('data-table.download_btn') }} dt--download" href="javascript:void(0);" title="@lang('data-table::messages.download')"><i class="bx bx-download"></i></a>
             @endif
+            <a class="{{ config('data-table.refresh_btn') }} dt--reload-data" href="javascript:void(0);" title="@lang('data-table::messages.reload_data')"><i class="bx bx-refresh"></i></a>
         </div>
 
         <div class="col-sm-12 col-md-4 dt--global-search">
