@@ -1,0 +1,21 @@
+{
+    "name": "srg/data-table",
+    "description": "Data Table will allow you to easily create Listing, Searching, Sorting and Download CSV.",
+    "keywords": ["data-table", "datatable", "data table", "laravel data table", "laravel"],
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Srg\\DataTable\\": "src/"
+        },
+        "files": [
+            "src/helpers/helper.php"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rajeev Gupta",
+            "email": "rrpit9@gmail.com"
+        }
+    ]
+}
