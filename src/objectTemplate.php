@@ -3,7 +3,7 @@ return <<<HTML
 <?php
 namespace {$rootNameSpace}DataTables;
 
-use Srg\DataTable\DataTable;
+use Rsg\DataTable\DataTable;
 use DB;
 
 class {$className} extends DataTable

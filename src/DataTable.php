@@ -1,5 +1,5 @@
 <?php
-namespace Srg\DataTable;
+namespace Rsg\DataTable;
 
 abstract class DataTable
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Srg\DataTable;
+namespace Rsg\DataTable;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

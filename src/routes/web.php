@@ -1,5 +1,5 @@
 <?php
-Route::get('/srg/data-table/{object}', function($object) {
+Route::get('/rsg/data-table/{object}', function($object) {
     try {
         $object = decrypt($object);
         return response()->json(['status' => true, 'data' => $object::toJSON()]);

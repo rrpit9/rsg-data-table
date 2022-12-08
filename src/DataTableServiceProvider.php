@@ -1,8 +1,8 @@
 <?php
-namespace Srg\DataTable;
+namespace Rsg\DataTable;
 
 use Illuminate\Support\ServiceProvider;
-use Srg\DataTable\DataTableCommand;
+use Rsg\DataTable\DataTableCommand;
 
 class DataTableServiceProvider extends ServiceProvider
 {
