@@ -34,7 +34,7 @@
     <div class="card-datatable table-responsive">
         <div class="dataTables_wrapper dt-bootstrap5">
             <div class="dt--table">
-                <table class="table-bordered dt-row-grouping table border-top dataTable dtr-column" style="width: 100%">
+                <table class="dt-row-grouping table border-top dataTable dtr-column" style="width: 100%">
                     <thead>
                         <tr class="text-nowrap">
                             @foreach($columns as $id => $label)
