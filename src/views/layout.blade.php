@@ -38,20 +38,21 @@
                     <thead>
                         <tr class="text-nowrap">
                             @foreach($columns as $id => $label)
-                                @php
-                                $haveSorting = in_array($id, $sortableColumns);
-                                $sortDirection = ($haveSorting && $id == $orderBy['sort'] ? strtolower($orderBy['sort_direction']) : false);
-                                $sortIconClass = $sortDirection ? ($sortDirection == 'asc' ? 'glyphicon-sort-by-attributes' : 'glyphicon-sort-by-attributes-alt') : 'glyphicon-sort';
+                                {{-- @php
+                                    $haveSorting = in_array($id, $sortableColumns);
+                                    $sortDirection = ($haveSorting && $id == $orderBy['sort'] ? strtolower($orderBy['sort_direction']) : false);
+                                    $sortIconClass = $sortDirection ? ($sortDirection == 'asc' ? 'glyphicon-sort-by-attributes' : 'glyphicon-sort-by-attributes-alt') : 'glyphicon-sort';
                                 @endphp
                                 <th data-column="{{ $id }}" class="column-{{ $id }} {{ $haveSorting ? 'dt--sorting' : '' }}{{ $sortDirection ? ' dt--sorting-' . $orderBy['sort_direction'] : '' }}" {!! $haveSorting ? ' style="cursor: pointer;"' : '' !!}>
                                     {!! $label !!}
                                     @if($haveSorting)
                                         <i class="glyphicon {{ $sortIconClass }} pull-right"></i>
                                     @endif
-                                </th>
+                                </th> --}}
+                                <th>{!! $label !!}</th>
                             @endforeach
                         </tr>
-                        @if( count($searchableColumns) > 0 )
+                        {{-- @if( count($searchableColumns) > 0 )
                             <tr>
                                 @foreach ($columns as $id => $title)
                                     @if ( isset($searchableColumns[$id]) )
@@ -78,7 +79,7 @@
                                     @endif
                                 @endforeach
                             </tr>
-                        @endif
+                        @endif --}}
                     </thead>
                     <tbody></tbody>
                     <tfoot>
@@ -93,7 +94,6 @@
                     </tfoot>
                 </table>
             </div>
-
         </div>
     </div>
 </div>
